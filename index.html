@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipin Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a8c577c8bc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ---------------------------------Header Section------------------------------------ -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p><span>V</span></p>
+                <ul class="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hi! it's me <span>Vipin</span></p>
+                <div class="dynamic-text">I am a <span></span></div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------About Section------------------------------------- -->
+    <div id="about">
+        <div class="about-col">About Me</div>
+        <p>Hello, I am a Software Developer and here is my portfolio website. I have completed my graduation in
+            CSE engineering from Jecrc Foundation, where I achieved an CGPA of 8.1.Interested to work in a
+            challenging and dynamic environment where I use my skills and knowledge to explore new things
+            practically with my team.</p>
+        <div class="tab-title">
+            <div class="tab-links active-link" onclick="openTab('skills',event)">Skills</div>
+            <div class="tab-links" onclick="openTab('education',event)">Education</div>
+            <div class="tab-links" onclick="openTab('training',event)">Training</div>
+        </div>
+        <div class="content active-tab" id="skills">
+            <ul>
+                <li><span>Languages</span><br>HTML, CSS, JavaScript, Python, C, C++</li>
+                <li><span>Frameworks</span><br>React, Tailwind, Bootstrap</li>
+                <li><span>Database</span><br>SQL</li>
+                <li><span>Frontend Web Developer</span></li>
+                <li><span>Data Structure and Algorithm</span></li>
+            </ul>
+        </div>
+        <div class="content" id="education">
+            <ul>
+                <li><span>2019-2023</span><br>B.Tech in CSE</li>
+                <li><span>2018-2019</span><br>XII</li>
+                <li><span>2016-2017</span><br>X</li>
+            </ul>
+        </div>
+        <div class="content" id="training">
+            <ul>
+                <li><span>(2023)Offered By Linkedin</span><br>Python Essenial Training</li>
+                <li><span>(2023)Offered By Linkedin</span><br>HTML Essenial Training</li>
+                <li><span>(2022)Offered By Matrix Computers</span><br>Dsa with C++</li>
+                <li><span>(2019)Offered By Matrix Computers</span><br>C Language</li>
+            </ul>
+        </div>
+    </div>
+    <!-- -------------------------------Services Section------------------------------------ -->
+    <div id="services">
+        <div class="services-header">My Services</div>
+        <div class="services-list">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Devlopment</h2>
+                <p>Can provide you help in creating fully functional and responsive websites that not only look stunning
+                    but also perform seamlessly across all devices and browsers.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>Can provide you the consultancy about the design of the web page that suits your product or business
+                    well as well as can provide you the optimised and intractive user interface.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-brands fa-codepen"></i>
+                <h2>Data Structure</h2>
+                <p>Can provide you help in any Data Structure and also suggest you the optimise solution for any data
+                    structure problem</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------Projects Section------------------------------------ -->
+    <div id="portfolio">
+        <div class="sub-title">Projects</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/todo1.PNG" alt="">
+                <div class="layer">
+                    <h2>Todo List App</h2>
+                    <p>User can add task and delete the task when not needed. Tech Stack: React, Tailwind, Next js </p>
+                    <a href="https://github.com/vipinsharma3/Todo-List-app" target="_blank"><i
+                            class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/bubble.png" alt="">
+                <div class="layer">
+                    <h2>Bubble Game</h2>
+                    <p>It is a fun game where user have to pop target bubbles within a time limit. Tech Stack:
+                        Html,CSS,JavaScript</p>
+                    <a href="https://vipinsharma3.github.io/Bubble-Game/" target="_blank"><i
+                            class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/password.png" alt="">
+                <div class="layer">
+                    <h2>Password Generator</h2>
+                    <p>User can generate random password according to their choice</p>
+                    <a href="https://vipinsharma3.github.io/Password-Generator/" target="_blank"><i
+                            class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------Contact Section-------------------------------------- -->
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>vipin332001@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>7073812984</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vipin-sharma-351556183/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+
+                    <a href="https://github.com/vipinsharma3" target="blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <a href="Images/resume/Resume.pdf" class="btn btn2" target="blank">Download
+                    CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &#169;Sharma, Made with <i class="fa-solid fa-heart"></i> by Vipin Sharma</p>
+    </div>
+    <script src="script.js" defer></script>
+
+
+</body>
+
+</html>
